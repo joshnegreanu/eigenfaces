@@ -31,7 +31,7 @@ ax3.axis('off')
 
 plt.show()
 
-test_face = faces[:,np.sum(nfaces[:0])]
+test_face = faces[:,np.sum(nfaces[:36])]
 test_face_centered = test_face - avg_face
 
 recon_test_face = avg_face + U[:,:m*n]@U[:,:m*n].T@test_face_centered
